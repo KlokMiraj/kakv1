@@ -1,0 +1,8 @@
+greeting: ${message}
+
+spring:
+  application:
+    name: kakv1
+
+  server:
+    port: 8081
