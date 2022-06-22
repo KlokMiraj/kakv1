@@ -21,11 +21,6 @@ public class Kakv1Application {
 		app.run(args);
 	}
 
-	@GetMapping
-	public RedirectView index(){
-		return new RedirectView("/Layout");
-	}
-
 
 }
 

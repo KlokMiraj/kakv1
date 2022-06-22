@@ -1,5 +1,6 @@
 package com.example.kak.kakv1;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,9 +14,12 @@ import javax.validation.constraints.Null;
 @Controller
 public class HomeController {
 
-    @RequestMapping("/Layout")
-    public String about(){
-        return ("Layout");
+    @Value("${message}")
+    private String message;
+
+    @RequestMapping("/")
+    public String index(){
+        return ("/Layout");
     }
 
     @RequestMapping(value = "/about", method = RequestMethod.GET, params = {"argName"})
