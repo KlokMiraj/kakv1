@@ -11,7 +11,7 @@ public class Student {
         super();
     }
 
-    public Student(long id,String firstName,String lastName,double amountDue,String dept){
+    public Student(long id,String firstName,String lastName,String dept,double amountDue){
         this.id=id;
         this.firstName=firstName;
         this.lastName=lastName;
